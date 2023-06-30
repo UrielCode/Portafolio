@@ -12,9 +12,9 @@
       Teal: hsl(174, 63%, 62%)
   */
 
-  --hue: 181;
-  --sat: 96%;
-  --lig: 27%;
+  --hue: 920;
+  --sat: 28%;
+  --lig: 33%;
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
   --title-color: hsl(var(--hue), 12%, 15%);
@@ -320,12 +320,25 @@ body.dark-theme{
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
-  
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  /* background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%); */
+  height: 51vh;
+}
+
+.projects__card.cHtml{
+  /* background-image: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%); */
+  background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
 }
 
 .projects__card img{
   width: 100%;
   height: 100%;
+  margin: 0 auto;
+}
+
+.iconC{
+  display: block;
+  margin: 0 auto;
 }
 
 .projects__modal{

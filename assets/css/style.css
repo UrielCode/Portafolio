@@ -472,6 +472,7 @@ main {
 .about .article-title { margin-bottom: 15px; }
 
 .about-text {
+ 
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
@@ -1612,6 +1613,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: max-content;
     margin-left: auto;
   }
+
+    .about-text {
+      --fs-6: 18px;
+      font-size: var(--fs-6);
+    }
   
 }
 

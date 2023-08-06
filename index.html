@@ -2,342 +2,652 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uriel Rdguez Ruiz | Personal Portfolio</title>
 
-  <!--=============== FAVICON ===============-->
-  <link rel="shortcut icon" href="assets/img/p" type="image/x-icon" />
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/urielR.jpeg" type="image/x-icon">
 
-  <!--=============== REMIX ICONS ===============-->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--=============== CSS ===============-->
-  <link rel="stylesheet" href="assets/css/styles.css" />
-
-  <script src="https://cdn.lordicon.com/bhenfmcm.js" defer></script>
-
-
-  <title>Portafolio | Uriel Rdguez</title>
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
-  <!--=============== HEADER PROFILE ===============-->
-  <header class="profile container">
-    <!-- theme button -->
-    <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-    <div class="profile__container grid">
-      <div class="profile__data">
-        <div class="profile__border">
-          <div class="profile__perfil">
-            <img src="assets/img/mypp.png" alt="" />
-          </div>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/urielR.jpeg" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Uriel Rdguez Ruiz">Uriel Rdguez Ruiz</h1>
+
+          <p class="title">Desarrollador Web Jr</p>
         </div>
 
-        <h2 class="profile__name">Uriel Rodriguez</h2>
-        <h3 class="profile__profession">Desarrollador Web Jr</h3>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>+ Información</span>
 
-        <ul class="profile__social">
-          <a href="https://www.linkedin.com/in/urielrdguez/" target="_blank" class="profile__social-link">
-            <i class="ri-linkedin-box-line"></i>
-          </a>
-          <a href="https://github.com/UrielCode" target="_blank" class="profile__social-link">
-            <i class="ri-github-line"></i>
-          </a>
-        </ul>
-      </div>
-
-      <div class="profile__info grid">
-        <div class="profile__info-group">
-          <h3 class="profile__info-number">+1</h3>
-          <p class="profile__info-description">
-            Desarrolador Web <br />
-            Jr
-          </p>
-        </div>
-
-        <div class="profile__info-group">
-          <h3 class="profile__info-number">+5</h3>
-          <p class="profile__info-description">
-            Proyectos <br />
-            terminados
-          </p>
-        </div>
-
-        <div class="profile__info-group">
-          <h3 class="profile__info-number">2</h3>
-          <p class="profile__info-description">
-            Clientes <br />
-            satisfechos
-          </p>
-        </div>
-      </div>
-
-      <div class="profile__buttons">
-        <a href="./assets/pdf/Uriel_Rdguez_CV.pdf" download class="button">Descargar CV
-          <i class="ri-download-line"></i>
-        </a>
-
-        <div class="profile__buttons-small">
-          <a href="https://api.whatsapp.com/send?phone=525544813096&text=Hola, enviame un mensaje y con gusto te atenderé"
-            target="_blank" class="button button__small button__gray">
-            <i class="ri-whatsapp-line"></i>
-          </a>
-
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!--=============== MAIN ===============-->
-  <main class="main">
-    <section class="filters container">
-      <!--=============== FILTERS TABS ===============-->
-
-      <ul class="filters__content">
-        <button class="filters__button filter-tab-active" data-target="#proyectos">
-          Proyectos
+          <ion-icon name="chevron-down"></ion-icon>
         </button>
 
-        <button class="filters__button" data-target="#skills">Skills</button>
-      </ul>
-
-      <div class="filters__sections">
-        <!--=============== PROJECTS ===============-->
-
-        <div class="projects__content grid filters__active" data-content id="proyectos">
-
-          <article class="projects__card cHtml">
-            <div class="cardIcon">
-              <lord-icon class="iconC" src="https://cdn.lordicon.com/zpxybbhl.json" trigger="loop"
-                colors="primary:#E8F6EF,secondary:#579BB1" style="width:300px;height:300px">
-              </lord-icon>
-            </div>
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">HTML | CSS
-                </span>
-                <h3 class="projects__title">Simulación de la página principal de Discord</h3>
-                <a href="https://pagesd.netlify.app/" class="projects__button button button__small" target="_blank">
-                  Ver proyecto
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="projects__card ">
-            <div class="cardIcon">
-              <lord-icon class="iconC" src="https://cdn.lordicon.com/yeallgsa.json" trigger="loop"
-                colors="primary:#08a88a,secondary:#E8F6EF" style="width:300px;height:300px">
-              </lord-icon>
-            </div>
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">REACT</span>
-                <h3 class="projects__title">Control de gastos</h3>
-                <a href="https://c-gastos.netlify.app/" class="projects__button button button__small" target="_blank">
-                  Ver proyecto
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="projects__card">
-            <div class="cardIcon">
-              <lord-icon class="iconC" src="https://cdn.lordicon.com/vaeagfzc.json" trigger="loop"
-                colors="primary:#E8F6EF,secondary:#08a88a" style="width:300px;height:300px">
-              </lord-icon>
-            </div>
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">REACT | API COINSTATS</span>
-                <h3 class="projects__title">DeFi | Página de cryptomonedas</h3>
-                <a href="https://cryptowebs.netlify.app/" class="projects__button button button__small" target="_blank">
-                  Ver proyecto
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="projects__card">
-            <div class="cardIcon">
-              <lord-icon class="iconC" src="https://cdn.lordicon.com/wzckbizc.json" trigger="loop" delay="1000"
-                colors="primary:#08a88a,secondary:#E8F6EF" style="width:300px;height:300px">
-              </lord-icon>
-            </div>
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">REACT</span>
-                <h3 class="projects__title">Página para seguimiento de pacientes de veterinaria</h3>
-                <a href="https://veterinaria-p.netlify.app/" class="projects__button button button__small"
-                  target="_blank">
-                  Ver proyecto
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="projects__card">
-            <div class="cardIcon">
-              <lord-icon class="iconC" src="https://cdn.lordicon.com/wloilxuq.json" trigger="loop" delay="2000"
-                state="hover-2" colors="primary:#E8F6EF,secondary:#08a88a" style="width:300px;height:300px">
-              </lord-icon>
-            </div>
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">React | Next | Rramer Motion | Formik | Yup | Tailwind CSS</span>
-                <h3 class="projects__title">
-                  Simulación de formularios
-                </h3>
-                <a href="https://forms-next.vercel.app/" class="projects__button button button__small" target="_blank">
-                  Ver proyecto
-                </a>
-              </div>
-            </div>
-          </article>
-
-
-
-          <article class="projects__card">
-            <div class="cardIcon">
-              <lord-icon class="iconC" src="https://cdn.lordicon.com/iahpzgqp.json" trigger="loop" delay="1000"
-                colors="primary:#E8F6EF,secondary:#08a88a" style="width:300px;height:300px">
-              </lord-icon>
-            </div>
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">React | Firebase | API ThemovieDB | Tailwind CSS</span>
-                <h3 class="projects__title">
-                  Clon de Netflix
-                </h3>
-                <a href="https://netf-cl.netlify.app/" class="projects__button button button__small" target="_blank">
-                  Ver proyecto
-                </a>
-              </div>
-            </div>
-          </article>
-
-        </div>
-
-        <!--=============== SKILLS ===============-->
-        <div class="skills__content grid" data-content id="skills">
-          <div class="skill__area">
-            <h3 class="skills__title">Fronted</h3>
-
-            <div class="skills__box">
-              <div class="skills_group">
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">HTML</h3>
-                    <span class="skills__level">Intermedio</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">CSS</h3>
-                    <span class="skills__level">Intermedio</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">JavaScript</h3>
-                    <span class="skills__level">Intermedio</span>
-                    <span class="skills__level"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">React</h3>
-                    <span class="skills__level">Básico</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skills_group">
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">Bootstrap</h3>
-                    <span class="skills__level">Intermedio</span>
-                  </div>
-                </div>
-
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">Tailwind CSS</h3>
-                    <span class="skills__level">Intermedio</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">Git</h3>
-                    <span class="skills__level">Intermedio</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">Wordpress</h3>
-                    <span class="skills__level">Intermedio</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill__area">
-            <h3 class="skills__title">Animaciones</h3>
-
-            <div class="skills__box">
-              <div class="skills_group">
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">GSAP</h3>
-                    <span class="skills__level">Básico</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Correo</p>
+
+              <a href="mailto:uriel.rdguez@gmail.com" class="contact-link">uriel.rdguez@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Celular</p>
+
+              <a href="tel:+5544813096" class="contact-link">5544813096</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Fecha de Nacimiento</p>
+
+              <time datetime="1982-06-23">25 de marzo de 1994</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Ubicación</p>
+
+              <address>Ecatepec de Morelos, Edo. Mex.</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/UrielCode" class="social-link">
+              <i class="bi bi-github"></i>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/urielrdguez/" class="social-link">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link  " data-nav-link>About</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>Hola</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resumen</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portafolio</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+          - testimonials modal
+        -->
+
+      <div class="modal-container" data-modal-container>
+
+        <div class="overlay" data-overlay></div>
+
+        <section class="testimonials-modal">
+
+          <button class="modal-close-btn" data-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </section>
+      </div>
+      </article>
+
+      <article class="contact active" data-page="hola">
+        <header>
+          <h2 class="h2 article-title">Sobre mí</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Desarrollador frontend junior apasionado por el mundo web. Me encanta crear y desarrollar páginas web que sean
+            atractivas, funcionales y que respondan a las expectativas de los usuarios.
+          </p>
+
+          <p>
+            Durante más de un año, he trabajado en diferentes proyectos web, desde el diseño hasta la implementación, pasando por la
+            corrección, el mantenimiento, el posicionamiento y la optimización. He aprendido a utilizar diversas herramientas y
+            tecnologías para mejorar la experiencia de navegación y el rendimiento de las páginas web.
+          </p>
+
+          <p>
+            También he tenido la oportunidad de formar parte de equipos de diseño instruccional, donde he podido demostrar mis
+            habilidades de liderazgo, gestión y coordinación. He participado en la planificación, el desarrollo y la evaluación de
+            proyectos educativos online, asegurándome de cumplir con los objetivos, los plazos y los estándares de calidad.
+          </p>
+        </section>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resumen">
+
+        <header>
+          <h2 class="h2 article-title">Resumen</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <i class="bi bi-book"></i>
+            </div>
+
+            <h3 class="h3">Educación</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">INSTITUTO TECNOLÓGICO DE GUSTAVO A. MADERO</h4>
+
+              <span>agosto 2012 — diciembre 2018</span>
+
+              <p class="timeline-text">
+                Ingeniería en Tecnologías de la Información y Comunicaciones
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <i class="bi bi-clipboard"></i>
+            </div>
+
+            <h3 class="h3">Experiencia</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Desarrolador Web Jr | Grupo Torices</h4>
+
+              <span>abrril 2022 - mayo 2023</span>
+
+              <p class="timeline-text">
+                Mejorar y actualizar las páginas web de nuestros clientes, aplicando las mejores prácticas de diseño y programación.
+                También me encargué de posicionar las páginas web en los buscadores, utilizando técnicas de SEO y marketing digital.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Freelance | Cheel</h4>
+
+              <span>enero 2022 — noviembre 2022</span>
+
+              <p class="timeline-text">
+                Se creó una plataforma de comercio electrónico para la empresa Chéel, una marca de joyería artesanal que se especializa
+                en aretes de arcilla polimérica. El sitio web se realizó con Wordpress y Woocommerce, dos herramientas que permiten
+                crear páginas web dinámicas y personalizadas.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Learning Delivery Specialist | Bedu</h4>
+
+              <span>abril 2020 — febrero 2022</span>
+
+              <p class="timeline-text">
+                Líder del equipo de Diseño Instruccional. Mi función principal era revisar el Q&A de los cursos que se impartían, así
+                como gestionar la captura y liberación de los mismos. También me encargaba de asegurar la calidad del contenido y de
+                implementar nuevas plataformas para la captura de los cursos. Mi objetivo era garantizar que los cursos fueran
+                efectivos, atractivos y accesibles para los usuarios.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Maestro | Bedu</h4>
+
+              <span>noviembre 2019 — diciembre 2021</span>
+
+              <p class="timeline-text">
+                Impartir clases de HTML, CSS, JavaScript y Git en los diferentes bootcamps que ofrecía la empresa. Mi objetivo era
+                enseñar a los alumnos los conceptos básicos de cada una de ellas, así como las buenas prácticas y las herramientas más
+                utilizadas. Además, les ayudaba a resolver sus dudas y a realizar proyectos prácticos para aplicar lo aprendido.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Habilidades</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">HTML</h5>
+                <data value="90">Avanzado</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">JavaScript</h5>
+                <data value="80">Intermedio</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">CSS</h5>
+                <data value="50">Intermedio</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Git</h5>
+                <data value="50">Intermedio</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">React</h5>
+                <data value="70">Báisco</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Wordpress</h5>
+                <data value="50">Básico</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">GSAP</h5>
+                <data value="50">Básico</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portafolio" data-page="portafolio">
+
+        <header>
+          <h2 class="h2 article-title">Portafolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+
+
+            <li class="filter-item">
+              <button data-filter-btn>HTML</button>
+            </li>
+
+            <!-- <li class="filter-item">
+              <button data-filter-btn>JavaScript</button>
+            </li> -->
+
+            <li class="filter-item">
+              <button data-filter-btn>React</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Selecciona una opción</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <!-- <li class="select-item">
+                <button data-select-item>All </button>
+              </li> -->
+
+              <li class="select-item">
+                <button data-select-item>HTML</button>
+              </li>
+
+              <!-- <li class="select-item">
+                <button data-select-item>JavaScript</button>
+              </li> -->
+
+              <li class="select-item">
+                <button data-select-item>React</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="react">
+              <a href="https://c-gastos.netlify.app/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/controlGastos.svg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Control de gastos</h3>
+
+                <p class="project-category">React</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="react">
+              <a href="https://cryptowebs.netlify.app/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/defi.svg" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DeFi | Página de cryptomonedas</h3>
+
+                <p class="project-category">REACT | API COINSTATS
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="html">
+              <a href="https://pagesd.netlify.app/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/discord.svg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Simulación de la página principal de Discord</h3>
+                <p class="project-category">HTML | CSS</p>
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="react">
+              <a href="https://veterinaria-p.netlify.app/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/controG.svg" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Página para seguimiento de pacientes de veterinaria</h3>
+
+                <p class="project-category">React</p>
+
+              </a>
+            </li>
+
+            <!-- <li class="project-item  active" data-filter-item data-category="javascript">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">JavaScript</p>
+
+              </a>
+            </li> -->
+
+            <li class="project-item  active" data-filter-item data-category="react">
+              <a href="https://forms-next.vercel.app/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/form.svg" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Simulación de formularios</h3>
+
+                <p class="project-category">React | Next | Rramer Motion | Formik | Yup | Tailwind CSS</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="react">
+              <a href="https://netf-cl.netlify.app/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/netflix.svg" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Clon de Netflix</h3>
+
+                <p class="project-category">React | Firebase | API ThemovieDB | Tailwind CSS</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+    </div>
   </main>
 
-  <!--=============== FOOTER ===============-->
-  <footer class="footer container">
-    <span class="footer__copy">
-      &#169; Uriel Rdguez. Todos los derechos reservados 2023
-    </span>
-  </footer>
 
-  <!--=============== SCROLLREVEAL ===============-->
-  <script src="assets/js/scrollreveal.min.js"></script>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
 
-  <!--=============== MAIN JS ===============-->
-  <script src="assets/js/main.js"></script>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
